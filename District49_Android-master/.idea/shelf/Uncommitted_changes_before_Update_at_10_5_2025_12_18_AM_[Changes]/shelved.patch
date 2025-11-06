@@ -1,0 +1,290 @@
+Index: app/src/main/res/layout/profile_page.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/gallery_background\">\r\n\r\n    <!-- Header with App Logo -->\r\n    <ImageView\r\n        android:id=\"@+id/logoImage\"\r\n        android:layout_width=\"124dp\"\r\n        android:layout_height=\"191dp\"\r\n        android:translationY=\"-63dp\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.05\"\r\n        app:srcCompat=\"@drawable/forgotpassword_updatedlogo22\" />\r\n\r\n    <ImageButton\r\n        android:id=\"@+id/ProfileButton\"\r\n        android:layout_width=\"53dp\"\r\n        android:layout_height=\"44dp\"\r\n        android:adjustViewBounds=\"true\"\r\n        android:background=\"?attr/selectableItemBackgroundBorderless\"\r\n        android:scaleType=\"fitCenter\"\r\n        android:src=\"@drawable/princ_profile_button\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.865\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.053\" />\r\n\r\n\r\n    <!-- MY PROFILE Header -->\r\n\r\n    <!-- Profile Picture -->\r\n\r\n\r\n    <!-- User Info Container -->\r\n\r\n    <!-- User Info Section as single image -->\r\n\r\n\r\n    <!-- Action Buttons -->\r\n\r\n    <ImageView\r\n        android:id=\"@+id/ivMyProfile\"\r\n        android:layout_width=\"289dp\"\r\n        android:layout_height=\"77dp\"\r\n        android:contentDescription=\"My Profile\"\r\n        android:src=\"@drawable/my_profile_icon\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.483\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.166\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/profilePicture\"\r\n        android:layout_width=\"109dp\"\r\n        android:layout_height=\"107dp\"\r\n        android:contentDescription=\"Profile picture\"\r\n        android:padding=\"10dp\"\r\n        android:src=\"@drawable/generic_avatar\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.501\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.286\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/userInfoContainer\"\r\n        android:layout_width=\"313dp\"\r\n        android:layout_height=\"416dp\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:adjustViewBounds=\"true\"\r\n        android:scaleType=\"fitCenter\"\r\n        android:src=\"@drawable/text_input\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.529\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.79\" />\r\n\r\n    <LinearLayout\r\n        android:id=\"@+id/buttonContainer\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"horizontal\"\r\n        android:layout_marginTop=\"16dp\"\r\n        app:layout_constraintTop_toBottomOf=\"@id/userInfoContainer\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\">\r\n\r\n        <Button\r\n            android:id=\"@+id/btnEditProfile\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"Edit Profile\"\r\n            android:layout_marginEnd=\"8dp\" />\r\n\r\n        <Button\r\n            android:id=\"@+id/btnSaveProfile\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"Save\"\r\n            android:visibility=\"gone\" />\r\n\r\n    </LinearLayout>\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/profile_page.xml b/app/src/main/res/layout/profile_page.xml
+--- a/app/src/main/res/layout/profile_page.xml	(revision 4cf52870d5a63cdfb974bd9fd97277afb683c186)
++++ b/app/src/main/res/layout/profile_page.xml	(date 1759475712390)
+@@ -21,8 +21,8 @@
+ 
+     <ImageButton
+         android:id="@+id/ProfileButton"
+-        android:layout_width="53dp"
+-        android:layout_height="44dp"
++        android:layout_width="63dp"
++        android:layout_height="56dp"
+         android:adjustViewBounds="true"
+         android:background="?attr/selectableItemBackgroundBorderless"
+         android:scaleType="fitCenter"
+@@ -34,61 +34,124 @@
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.053" />
+ 
+-
+-    <!-- MY PROFILE Header -->
++    <!-- User Info Container with actual EditText fields -->
+ 
+-    <!-- Profile Picture -->
++    <!-- User Info Container with freely positioned EditTexts -->
+ 
+-
+-    <!-- User Info Container -->
+-
+-    <!-- User Info Section as single image -->
+-
+-
+-    <!-- Action Buttons -->
+ 
+     <ImageView
+         android:id="@+id/ivMyProfile"
+-        android:layout_width="289dp"
+-        android:layout_height="77dp"
++        android:layout_width="278dp"
++        android:layout_height="46dp"
+         android:contentDescription="My Profile"
+         android:src="@drawable/my_profile_icon"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.483"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.166" />
++        app:layout_constraintVertical_bias="0.162" />
+ 
+     <ImageView
+         android:id="@+id/profilePicture"
+         android:layout_width="109dp"
+         android:layout_height="107dp"
++        android:background="@drawable/circle_profile_background"
++        android:clickable="true"
+         android:contentDescription="Profile picture"
+-        android:padding="10dp"
++        android:focusable="true"
++        android:padding="2dp"
++        android:scaleType="centerCrop"
+         android:src="@drawable/generic_avatar"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.501"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.286" />
++        app:layout_constraintVertical_bias="0.262" />
+ 
+-    <ImageView
++    <androidx.constraintlayout.widget.ConstraintLayout
+         android:id="@+id/userInfoContainer"
+-        android:layout_width="313dp"
+-        android:layout_height="416dp"
++        android:layout_width="309dp"
++        android:layout_height="438dp"
+         android:layout_marginStart="32dp"
++        android:layout_marginTop="20dp"
+         android:layout_marginEnd="32dp"
+-        android:adjustViewBounds="true"
+-        android:scaleType="fitCenter"
+-        android:src="@drawable/text_input"
+-        app:layout_constraintBottom_toBottomOf="parent"
++        android:background="@drawable/text_input"
++        android:padding="16dp"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.529"
+         app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.79" />
++        app:layout_constraintTop_toBottomOf="@id/profilePicture">
++
++        <EditText
++            android:id="@+id/editTextName"
++            android:layout_width="257dp"
++            android:layout_height="34dp"
++            android:layout_marginStart="4dp"
++            android:layout_marginTop="24dp"
++            android:background="@android:color/white"
++            android:enabled="false"
++            android:hint="Name"
++            android:inputType="textPersonName"
++            android:textColor="#000000"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toTopOf="parent" />
++
++        <EditText
++            android:id="@+id/editTextSurname"
++            android:layout_width="265dp"
++            android:layout_height="35dp"
++            android:layout_marginStart="8dp"
++            android:layout_marginTop="48dp"
++            android:background="@android:color/white"
++            android:enabled="false"
++            android:hint="Surname"
++            android:inputType="textPersonName"
++            android:textColor="#000000"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@id/editTextName" />
++
++        <EditText
++            android:id="@+id/editTextEmail"
++            android:layout_width="257dp"
++            android:layout_height="35dp"
++            android:layout_marginStart="4dp"
++            android:layout_marginTop="44dp"
++            android:background="@android:color/white"
++            android:enabled="false"
++            android:hint="Email"
++            android:inputType="textEmailAddress"
++            android:textColor="#000000"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@id/editTextSurname" />
++
++        <EditText
++            android:id="@+id/editTextPhone"
++            android:layout_width="261dp"
++            android:layout_height="26dp"
++            android:layout_marginTop="52dp"
++            android:layout_marginEnd="16dp"
++            android:background="@android:color/white"
++            android:enabled="false"
++            android:hint="Phone (optional)"
++            android:inputType="phone"
++            android:textColor="#000000"
++            app:layout_constraintEnd_toEndOf="parent"
++            app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
++
++        <EditText
++            android:id="@+id/editTextPassword"
++            android:layout_width="241dp"
++            android:layout_height="28dp"
++            android:layout_marginStart="8dp"
++            android:layout_marginTop="52dp"
++            android:background="@android:color/white"
++            android:enabled="false"
++            android:hint="Password"
++            android:inputType="textPassword"
++            android:textColor="#000000"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@id/editTextPhone" />
++
++    </androidx.constraintlayout.widget.ConstraintLayout>
+ 
+     <LinearLayout
+         android:id="@+id/buttonContainer"
+@@ -96,17 +159,11 @@
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="16dp"
++        android:layout_marginBottom="32dp"
+         app:layout_constraintTop_toBottomOf="@id/userInfoContainer"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent">
+ 
+-        <Button
+-            android:id="@+id/btnEditProfile"
+-            android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
+-            android:text="Edit Profile"
+-            android:layout_marginEnd="8dp" />
+-
+         <Button
+             android:id="@+id/btnSaveProfile"
+             android:layout_width="wrap_content"
+@@ -116,4 +173,14 @@
+ 
+     </LinearLayout>
+ 
++    <Button
++        android:id="@+id/btnEditProfile"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Edit Profile"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        android:layout_marginBottom="32dp"/>
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+Index: app/src/main/java/vcmsa/projects/district49_android/Homepage.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Updated Homepage.kt with news integration\r\npackage vcmsa.projects.district49_android\r\n\r\nimport android.content.Intent\r\nimport android.os.Bundle\r\nimport android.os.Handler\r\nimport android.os.Looper\r\nimport android.view.View\r\nimport android.view.animation.AccelerateDecelerateInterpolator\r\nimport android.widget.EditText\r\nimport android.widget.ImageButton\r\nimport android.widget.Toast\r\nimport androidx.activity.enableEdgeToEdge\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport androidx.core.view.ViewCompat\r\nimport androidx.core.view.WindowInsetsCompat\r\nimport androidx.lifecycle.lifecycleScope\r\nimport kotlinx.coroutines.launch\r\nimport vcmsa.projects.district49_android.utils.AuthManager\r\n\r\nclass Homepage : AppCompatActivity() {\r\n\r\n    private lateinit var newsletterManager: NewsletterManager\r\n    private lateinit var adminRepository: AdminRepository\r\n    private var newsletterPopupShown = false\r\n\r\n    private fun addClickAnimation(button: ImageButton, onClick: () -> Unit = {}) {\r\n        button.setOnClickListener {\r\n            button.animate()\r\n                .scaleX(0.93f)\r\n                .scaleY(0.93f)\r\n                .setDuration(70)\r\n                .withEndAction {\r\n                    button.animate()\r\n                        .scaleX(1f)\r\n                        .scaleY(1f)\r\n                        .setDuration(70)\r\n                        .withEndAction {\r\n                            onClick()\r\n                        }\r\n                        .start()\r\n                }\r\n                .start()\r\n        }\r\n    }\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        enableEdgeToEdge()\r\n        setContentView(R.layout.homepage)\r\n\r\n        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->\r\n            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())\r\n            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)\r\n            insets\r\n        }\r\n\r\n        // Initialize repositories\r\n        newsletterManager = NewsletterManager.getInstance()\r\n        adminRepository = AdminRepository()\r\n\r\n        animateMenuButtonsSequentially()\r\n        setupNewsletter()\r\n        setupAdminAccess()\r\n        loadLatestDonationGoal()\r\n\r\n        addClickAnimation(findViewById(R.id.btnProfile)) { /* Profile click */ }\r\n        addClickAnimation(findViewById(R.id.btnSearch)) { /* Search click */ }\r\n        addClickAnimation(findViewById(R.id.btnMenu)) {\r\n            val intent = Intent(this, MenuActivity::class.java)\r\n            startActivity(intent)\r\n        }\r\n    }\r\n\r\n    private fun setupAdminAccess() {\r\n        // Check if current user is admin and add admin dashboard access\r\n        lifecycleScope.launch {\r\n            try {\r\n                val authManager = AuthManager.getInstance()\r\n                val isAdminResult = authManager.isCurrentUserAdmin()\r\n\r\n                if (isAdminResult.getOrDefault(false)) {\r\n                    // Add admin access - you could add this as a long press on logo or menu\r\n                    findViewById<ImageButton>(R.id.btnMenu).setOnLongClickListener {\r\n                        val intent = Intent(this@Homepage, AdminDashboard::class.java)\r\n                        startActivity(intent)\r\n                        true\r\n                    }\r\n\r\n                    // Show admin indicator\r\n                    Toast.makeText(this@Homepage, \"Admin mode available (long press menu)\", Toast.LENGTH_SHORT).show()\r\n                }\r\n            } catch (e: Exception) {\r\n                // Handle error silently\r\n            }\r\n        }\r\n    }\r\n\r\n    private fun loadLatestDonationGoal() {\r\n        lifecycleScope.launch {\r\n            try {\r\n                val donationResult = adminRepository.getCurrentDonationGoal()\r\n                donationResult.getOrNull()?.let { goal ->\r\n                    // Update the donation display in your layout\r\n                    updateDonationDisplay(goal)\r\n                }\r\n            } catch (e: Exception) {\r\n                // Use default values if loading fails\r\n            }\r\n        }\r\n    }\r\n\r\n    private fun updateDonationDisplay(goal: vcmsa.projects.district49_android.models.DonationGoal) {\r\n        // Update your donation display views here\r\n        // You'll need to add TextViews to your layout for this\r\n        // For now, this is a placeholder - you can implement based on your design\r\n    }\r\n\r\n    private fun animateMenuButtonsSequentially() {\r\n        val buttonIds = listOf(\r\n            R.id.btnNewsAnnouncements,\r\n            R.id.btnRectangle42,\r\n            R.id.btnUpcomingEvents,\r\n            R.id.btnDonationHistory,\r\n            R.id.btnIncentives\r\n        )\r\n        val handler = Handler(Looper.getMainLooper())\r\n        var delay = 0L\r\n\r\n        buttonIds.forEach { id ->\r\n            val button = findViewById<ImageButton>(id)\r\n            button.animate().cancel()\r\n            button.alpha = 0f\r\n            button.translationY += 300f\r\n            button.scaleX = 0.7f\r\n            button.scaleY = 0.7f\r\n            button.visibility = View.VISIBLE\r\n\r\n            handler.postDelayed({\r\n                button.animate()\r\n                    .translationYBy(-300f)\r\n                    .scaleX(1f)\r\n                    .scaleY(1f)\r\n                    .alpha(1f)\r\n                    .setDuration(420)\r\n                    .setInterpolator(AccelerateDecelerateInterpolator())\r\n                    .start()\r\n\r\n                addClickAnimation(button) {\r\n                    when (id) {\r\n                        R.id.btnNewsAnnouncements -> {\r\n                            // Show latest news announcements\r\n                            showLatestNews()\r\n                        }\r\n                        R.id.btnRectangle42 -> { /* Rectangle42 click */ }\r\n                        R.id.btnUpcomingEvents -> { /* Upcoming Events click */ }\r\n                        R.id.btnDonationHistory -> { /* Donation History click */ }\r\n                        R.id.btnIncentives -> { /* Incentives click */ }\r\n                    }\r\n                }\r\n            }, delay)\r\n            delay += 170\r\n        }\r\n    }\r\n\r\n    private fun showLatestNews() {\r\n        lifecycleScope.launch {\r\n            try {\r\n                val newsResult = adminRepository.getLatestNewsAnnouncements(5)\r\n                newsResult.getOrNull()?.let { newsList ->\r\n                    if (newsList.isNotEmpty()) {\r\n                        showNewsDialog(newsList)\r\n                    } else {\r\n                        Toast.makeText(this@Homepage, \"No news available\", Toast.LENGTH_SHORT).show()\r\n                    }\r\n                }\r\n            } catch (e: Exception) {\r\n                Toast.makeText(this@Homepage, \"Failed to load news\", Toast.LENGTH_SHORT).show()\r\n            }\r\n        }\r\n    }\r\n\r\n    private fun showNewsDialog(newsList: List<vcmsa.projects.district49_android.models.NewsAnnouncement>) {\r\n        val newsView = layoutInflater.inflate(R.layout.news_dialog, null)\r\n\r\n        // You'll need to create this layout - for now using a simple approach\r\n        val dialog = android.app.AlertDialog.Builder(this)\r\n            .setTitle(\"Latest News & Announcements\")\r\n            .setView(newsView)\r\n            .setPositiveButton(\"Close\", null)\r\n            .create()\r\n\r\n        // Populate the news content\r\n        // This is a simplified version - you should create a proper RecyclerView layout\r\n        val newsContent = StringBuilder()\r\n        newsList.forEach { news ->\r\n            newsContent.append(\"${news.title}\\n\")\r\n            newsContent.append(\"${news.content}\\n\")\r\n            newsContent.append(\"${java.text.SimpleDateFormat(\"dd/MM/yyyy\", java.util.Locale.getDefault()).format(java.util.Date(news.createdAt))}\\n\\n\")\r\n        }\r\n\r\n        dialog.show()\r\n    }\r\n\r\n    // Newsletter setup (existing code remains the same)\r\n    private fun setupNewsletter() {\r\n        Handler(Looper.getMainLooper()).postDelayed({\r\n            showNewsletterPopupIfNeeded()\r\n        }, 3000)\r\n    }\r\n\r\n    private fun showNewsletterPopupIfNeeded() {\r\n        if (newsletterPopupShown) return\r\n\r\n        lifecycleScope.launch {\r\n            try {\r\n                val authManager = AuthManager.getInstance()\r\n                val currentUser = authManager.getCurrentFirebaseUser()\r\n\r\n                if (currentUser != null) {\r\n                    val isSubscribedResult = newsletterManager.isCurrentUserSubscribed(currentUser.uid)\r\n\r\n                    if (isSubscribedResult.isSuccess) {\r\n                        val isSubscribed = isSubscribedResult.getOrDefault(false)\r\n                        if (!isSubscribed) {\r\n                            showNewsletterPopup()\r\n                        }\r\n                    } else {\r\n                        showNewsletterPopup()\r\n                    }\r\n                } else {\r\n                    showNewsletterPopup()\r\n                }\r\n\r\n                newsletterPopupShown = true\r\n            } catch (e: Exception) {\r\n                newsletterPopupShown = true\r\n            }\r\n        }\r\n    }\r\n\r\n    private fun showNewsletterPopup() {\r\n        val newsletterView = layoutInflater.inflate(R.layout.newsletter, null)\r\n        val emailEditText = newsletterView.findViewById<EditText>(R.id.etEmail)\r\n        val nameEditText = newsletterView.findViewById<EditText>(R.id.etName)\r\n        val signupButton = newsletterView.findViewById<ImageButton>(R.id.btnSignUpImage)\r\n\r\n        // Pre-fill email and name\r\n        lifecycleScope.launch {\r\n            try {\r\n                val authManager = AuthManager.getInstance()\r\n                val currentUserData = authManager.getCurrentUserData()\r\n                if (currentUserData.isSuccess) {\r\n                    val user = currentUserData.getOrNull()!!\r\n                    runOnUiThread {\r\n                        emailEditText.setText(user.email)\r\n                        nameEditText.setText(user.getFullName())\r\n                    }\r\n                }\r\n            } catch (_: Exception) { /* Ignore pre-fill errors */ }\r\n        }\r\n\r\n        val dialog = android.app.AlertDialog.Builder(this)\r\n            .setView(newsletterView)\r\n            .setCancelable(true)\r\n            .create()\r\n        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)\r\n\r\n        signupButton.setOnClickListener {\r\n            val email = emailEditText.text.toString().trim()\r\n            val name = nameEditText.text.toString().trim()\r\n\r\n            if (!validateNewsletterInput(email, name)) return@setOnClickListener\r\n\r\n            lifecycleScope.launch {\r\n                try {\r\n                    val currentUser = AuthManager.getInstance().getCurrentFirebaseUser()\r\n                    if (currentUser != null) {\r\n                        val userUid = currentUser.uid\r\n\r\n                        val result = newsletterManager.subscribeToNewsletter(email, name, userUid)\r\n\r\n                        runOnUiThread {\r\n                            if (result.isSuccess) {\r\n                                Toast.makeText(this@Homepage, \"Successfully subscribed!\", Toast.LENGTH_SHORT).show()\r\n                                dialog.dismiss()\r\n                            } else {\r\n                                val error = result.exceptionOrNull()?.message ?: \"Subscription failed\"\r\n                                Toast.makeText(this@Homepage, error, Toast.LENGTH_SHORT).show()\r\n                            }\r\n                        }\r\n                    } else {\r\n                        runOnUiThread {\r\n                            Toast.makeText(this@Homepage, \"Unable to get user UID\", Toast.LENGTH_SHORT).show()\r\n                        }\r\n                    }\r\n                } catch (e: Exception) {\r\n                    runOnUiThread {\r\n                        Toast.makeText(this@Homepage, \"Error: ${e.message}\", Toast.LENGTH_SHORT).show()\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        dialog.show()\r\n    }\r\n\r\n    private fun validateNewsletterInput(email: String, name: String): Boolean {\r\n        if (email.isEmpty()) {\r\n            Toast.makeText(this, \"Email is required\", Toast.LENGTH_SHORT).show()\r\n            return false\r\n        }\r\n        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {\r\n            Toast.makeText(this, \"Please enter a valid email\", Toast.LENGTH_SHORT).show()\r\n            return false\r\n        }\r\n        if (name.isEmpty()) {\r\n            Toast.makeText(this, \"Name is required\", Toast.LENGTH_SHORT).show()\r\n            return false\r\n        }\r\n        return true\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/vcmsa/projects/district49_android/Homepage.kt b/app/src/main/java/vcmsa/projects/district49_android/Homepage.kt
+--- a/app/src/main/java/vcmsa/projects/district49_android/Homepage.kt	(revision 4cf52870d5a63cdfb974bd9fd97277afb683c186)
++++ b/app/src/main/java/vcmsa/projects/district49_android/Homepage.kt	(date 1759432221724)
+@@ -64,7 +64,10 @@
+         setupAdminAccess()
+         loadLatestDonationGoal()
+ 
+-        addClickAnimation(findViewById(R.id.btnProfile)) { /* Profile click */ }
++        addClickAnimation(findViewById(R.id.btnProfile)) {
++            val intent = Intent(this, ProfileActivity::class.java)
++            startActivity(intent)
++        }
+         addClickAnimation(findViewById(R.id.btnSearch)) { /* Search click */ }
+         addClickAnimation(findViewById(R.id.btnMenu)) {
+             val intent = Intent(this, MenuActivity::class.java)
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\">\r\n    <!-- Permissions -->\r\n    <uses-permission android:name=\"android.permission.INTERNET\" />\r\n    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\r\n    <uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\r\n    <uses-permission android:name=\"android.permission.READ_MEDIA_IMAGES\" />\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\r\n        android:fullBackupContent=\"@xml/backup_rules\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.District49_Android\"\r\n        tools:targetApi=\"31\">\r\n        <activity\r\n            android:name=\".our_story\"\r\n            android:exported=\"false\" />\r\n        <!-- Launcher / entry activity -->\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity> <!-- Other screens -->\r\n        <activity android:name=\".RegisterPage\" />\r\n        <activity android:name=\".ResetPassword\" />\r\n        <activity android:name=\".MenuActivity\" />\r\n        <activity android:name=\".Homepage\" />\r\n        <activity android:name=\".DonateOne\" />\r\n        <activity android:name=\".DonateTwo\" />\r\n        <activity android:name=\".ContactUsActivity\" />\r\n        <activity android:name=\".GalleryActivity\"></activity>\r\n        <activity android:name=\".FullscreenImageActivity\"></activity>\r\n        <activity\r\n            android:name=\".LoginOrRegisterActivity\"\r\n            android:exported=\"false\" />\r\n\r\n        <activity\r\n            android:name=\".AdminDashboard\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".PaymentWebViewActivity\"\r\n            android:exported=\"false\" /> <!-- Has intent-filters, so exported MUST be set on API 31+ -->\r\n        <activity\r\n            android:name=\".PaymentResultActivity\"\r\n            android:exported=\"true\">\r\n\r\n            <!-- Deep link: success -->\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.VIEW\" />\r\n\r\n                <category android:name=\"android.intent.category.DEFAULT\" />\r\n                <category android:name=\"android.intent.category.BROWSABLE\" />\r\n\r\n                <data\r\n                    android:host=\"payment\"\r\n                    android:pathPrefix=\"/success\"\r\n                    android:scheme=\"myapp\" />\r\n            </intent-filter>\r\n\r\n            <!-- Deep link: cancel -->\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.VIEW\" />\r\n\r\n                <category android:name=\"android.intent.category.DEFAULT\" />\r\n                <category android:name=\"android.intent.category.BROWSABLE\" />\r\n\r\n                <data\r\n                    android:host=\"payment\"\r\n                    android:pathPrefix=\"/cancel\"\r\n                    android:scheme=\"myapp\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <activity\r\n            android:name=\".LoginPage\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".MeetTheTeam\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".AddMember\"\r\n            android:exported=\"false\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 4cf52870d5a63cdfb974bd9fd97277afb683c186)
++++ b/app/src/main/AndroidManifest.xml	(date 1759429604491)
+@@ -2,10 +2,15 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools">
+     <!-- Permissions -->
++    <uses-feature
++        android:name="android.hardware.camera"
++        android:required="false" />
++
+     <uses-permission android:name="android.permission.INTERNET" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
++    <uses-permission android:name="android.permission.CAMERA" />
+ 
+     <application
+         android:allowBackup="true"
+@@ -39,6 +44,7 @@
+         <activity android:name=".ContactUsActivity" />
+         <activity android:name=".GalleryActivity"></activity>
+         <activity android:name=".FullscreenImageActivity"></activity>
++        <activity android:name=".ProfileActivity"></activity>
+         <activity
+             android:name=".LoginOrRegisterActivity"
+             android:exported="false" />
+Index: app/src/main/java/vcmsa/projects/district49_android/User.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package vcmsa.projects.district49_android.models\r\n\r\ndata class User(\r\n    val uid: String = \"\",\r\n    val email: String = \"\",\r\n    val name: String = \"\",\r\n    val surname: String = \"\",\r\n    val userRole: String = \"user\", // default role\r\n    val createdAt: Long = System.currentTimeMillis(),\r\n    val lastLogin: Long = System.currentTimeMillis()\r\n) {\r\n    // No-argument constructor for Firestore\r\n    constructor() : this(\"\", \"\", \"\", \"\", \"user\", 0L, 0L)\r\n\r\n    fun getFullName(): String = \"$name $surname\"\r\n\r\n    fun isAdmin(): Boolean = userRole == \"admin\"\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/vcmsa/projects/district49_android/User.kt b/app/src/main/java/vcmsa/projects/district49_android/User.kt
+--- a/app/src/main/java/vcmsa/projects/district49_android/User.kt	(revision 4cf52870d5a63cdfb974bd9fd97277afb683c186)
++++ b/app/src/main/java/vcmsa/projects/district49_android/User.kt	(date 1759425902854)
+@@ -5,12 +5,13 @@
+     val email: String = "",
+     val name: String = "",
+     val surname: String = "",
+-    val userRole: String = "user", // default role
++    val phone: String = "", 
++    val profilePictureUrl: String = "",
++    val userRole: String = "user",
+     val createdAt: Long = System.currentTimeMillis(),
+     val lastLogin: Long = System.currentTimeMillis()
+ ) {
+-    // No-argument constructor for Firestore
+-    constructor() : this("", "", "", "", "user", 0L, 0L)
++    constructor() : this("", "", "", "", "", "", "user", 0L, 0L)
+ 
+     fun getFullName(): String = "$name $surname"
+ 

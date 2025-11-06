@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="labelEmail" type="id" />
+    <item name="labelName" type="id" />
+    <item name="btnSignUpImage" type="id" />
+    <item name="bottom_nav_bar" type="id" />
+    <item name="nav_btn_home" type="id" />
+    <item name="nav_btn_search" type="id" />
+    <item name="nav_btn_notifications" type="id" />
+    <item name="nav_btn_profile" type="id" />
+    <item name="nav_btn_settings" type="id" />
+</resources>

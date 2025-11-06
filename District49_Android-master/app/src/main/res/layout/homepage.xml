@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Homepage">
+
+    <!-- ===== BACKGROUND ===== -->
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_phonebackground07" />
+
+    <!-- ===== LOGO ===== -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="140dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/final_logo" />
+
+    <!-- ===== GREY BLOCK ===== -->
+    <ImageView
+        android:id="@+id/imgGreyBlock"
+        android:layout_width="373dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="134dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_greyblock" />
+
+    <!-- ===== "HELLO USER" TEXT ===== -->
+    <TextView
+        android:id="@+id/tvHelloUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELLO, USER"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="159dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ===== NEWS (ImageButton) ===== -->
+    <ImageButton
+        android:id="@+id/btnNews"
+        android:layout_width="318dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="220dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="News and announcements"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:padding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_news" />
+
+    <!-- ===== PRINCIPLES (ImageButton) ===== -->
+    <ImageButton
+        android:id="@+id/btnPrinciples"
+        android:layout_width="172dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="396dp"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Our Principles"
+        android:padding="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_principles" />
+
+    <!-- ===== EVENTS (ImageButton) ===== -->
+    <ImageButton
+        android:id="@+id/btnEvents"
+        android:layout_width="130dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="396dp"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Upcoming Events"
+        android:padding="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_events" />
+
+    <!-- ===== DONATION PINK RECTANGLE ===== -->
+    <ImageView
+        android:id="@+id/imgPinkRect"
+        android:layout_width="318dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="540dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_pinkrectangle" />
+
+    <!-- ===== PROGRESS CONTENT (LABEL + BAR) INSIDE THE PINK RECTANGLE ===== -->
+    <!-- Container width matches the pink rectangle, so percent width is relative to it -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintStart_toStartOf="@id/imgPinkRect"
+        app:layout_constraintEnd_toEndOf="@id/imgPinkRect"
+        app:layout_constraintTop_toTopOf="@id/imgPinkRect"
+        app:layout_constraintBottom_toBottomOf="@id/imgPinkRect">
+
+        <!-- Label -->
+        <TextView
+            android:id="@+id/tvProgressLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Progress bar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:shadowColor="#000000"
+            android:shadowRadius="2"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Track -->
+        <View
+            android:id="@+id/progressBackground"
+            android:layout_width="0dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/progress_bar_empty_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProgressLabel" />
+
+        <!-- Fill (percent width of the progressContainer) -->
+        <View
+            android:id="@+id/progressLine"
+            android:layout_width="0dp"
+            android:layout_height="12dp"
+            android:background="@drawable/progress_bar_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/progressBackground"
+            app:layout_constraintBottom_toBottomOf="@id/progressBackground"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.0"
+            app:layout_constraintHorizontal_bias="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ===== ADMIN/PROFILE BUTTON ===== -->
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Admin Dashboard"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:padding="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_profile"
+        tools:visibility="visible" />
+
+    <!-- ===== LOGOUT BUTTON ===== -->
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Logout"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:padding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_logout" />
+
+    <!-- ===== BOTTOM NAVIGATION ===== -->
+    <include
+        android:id="@+id/include_bottom_nav"
+        layout="@layout/navbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

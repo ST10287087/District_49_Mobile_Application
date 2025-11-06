@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1088777535952",
+    "project_id": "district49-db",
+    "storage_bucket": "district49-db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088777535952:android:9620cc7a2e6402fd2c79d5",
+        "android_client_info": {
+          "package_name": "vcmsa.projects.district49_android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLmFyhT8EQto64y8r84_Phgrf_Qne61u0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

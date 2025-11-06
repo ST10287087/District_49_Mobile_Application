@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navbar_root"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_gravity="bottom"
+    android:clipToPadding="false"
+    android:clickable="false"
+    android:focusable="false">
+
+    <LinearLayout
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DEDEDE"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:clickable="false"
+        android:focusable="false">
+
+        <ImageButton
+            android:id="@+id/nav_btn_arrow_back"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/arrow_back"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="#FF9800"
+            app:srcCompat="@drawable/navbar_arrow_back" />
+
+        <ImageButton
+            android:id="@+id/nav_btn_plus_circle"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/plus_circle"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="#FF9800"
+            app:srcCompat="@drawable/menu_menu2" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/nav_btn_notifications"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/notifications"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="#FF9800"
+            app:srcCompat="@drawable/navbar_notifications" />
+
+        <ImageButton
+            android:id="@+id/nav_btn_profile"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/profile"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="#FF9800"
+            app:srcCompat="@drawable/navbar_profile" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/nav_btn_home_container"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/bottom_nav_bar"
+        android:layout_marginTop="-27dp"
+        android:background="@drawable/home_button_gray_circle"
+        android:elevation="8dp"
+        android:clickable="false"
+        android:focusable="false">
+
+        <ImageButton
+            android:id="@+id/nav_btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/home"
+            android:padding="18dp"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/navbar_home"
+            app:tint="#FF9800" />
+    </FrameLayout>
+
+</RelativeLayout>

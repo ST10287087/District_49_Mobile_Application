@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="118dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/home_updatedlogo22" />
+
+    <!-- DONUT CARD (image + chart + center label) -->
+    <FrameLayout
+        android:id="@+id/donut_card"
+        android:layout_width="227dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/img_donate_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/donateone_background_one_writing" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/donut_chart"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            tools:text="65%" />
+
+        <TextView
+            android:id="@+id/tv_donut_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#80FFFFFF"
+            android:paddingLeft="18dp"
+            android:paddingTop="8dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="8dp"
+            android:text="65%"
+            android:textSize="20sp"
+            android:textColor="#FDA738"
+            android:fontFamily="@font/bungee_regular" />
+    </FrameLayout>
+
+    <!-- GOAL BLOCK (image bg + constraint content) -->
+    <FrameLayout
+        android:id="@+id/goal_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/donut_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/img_goal_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/donateone_block_background_two" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/goal_content"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- R50 000 OF R120 000 RAISED (centered chain) -->
+            <TextView
+                android:id="@+id/tv_raised_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jersey25"
+                android:text="R50 000 OF "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@id/tv_goal_value"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_goal_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jersey25"
+                android:text="R120 000"
+                android:textColor="#1100FF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/tv_raised_suffix"
+                app:layout_constraintStart_toEndOf="@id/tv_raised_prefix"
+                app:layout_constraintTop_toTopOf="@id/tv_raised_prefix" />
+
+            <TextView
+                android:id="@+id/tv_raised_suffix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jersey25"
+                android:text=" RAISED"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_goal_value"
+                app:layout_constraintTop_toTopOf="@id/tv_goal_value" />
+
+            <!-- Center the 3-text chain horizontally -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <!-- Use constraints so the trio sits centered between guidelines -->
+            <!-- (Leaving as-is; chain is centered by having both start/end constrained to parent) -->
+
+            <!-- Horizontal progress (white bg, FEAB43 progress) -->
+
+            <ProgressBar
+                android:id="@+id/progress_goal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="240dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:progress="65"
+                android:progressBackgroundTint="#FFFFFF"
+                android:progressTint="#FEAB43"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_raised_prefix" />
+
+            <TextView
+                android:id="@+id/tv_goal_caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/jersey25"
+                android:text="foundation donation goals"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progress_goal" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <!-- DONATE NOW as clickable image -->
+    <ImageButton
+        android:id="@+id/btn_donate_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Donate Now"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/donateone_donatenow_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

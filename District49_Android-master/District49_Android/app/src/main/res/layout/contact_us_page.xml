@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <ImageView
+        android:id="@+id/Loginline"
+        android:layout_width="554dp"
+        android:layout_height="908dp"
+        android:src="@drawable/contact_us_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="138dp"
+        android:layout_height="215dp"
+        android:translationY="-63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/forgotpassword_updatedlogo22" />
+    <ImageButton
+        android:id="@+id/ProfileButton"
+        android:layout_width="67dp"
+        android:layout_height="62dp"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/princ_profile_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <ImageButton
+        android:id="@+id/SearchButton"
+        android:layout_width="67dp"
+        android:layout_height="62dp"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/princ_search_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+    <ImageButton
+        android:id="@+id/MenuButton"
+        android:layout_width="67dp"
+        android:layout_height="62dp"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/menu_lines_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <ImageView
+        android:id="@+id/contactText"
+        android:layout_width="211dp"
+        android:layout_height="85dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/contact_heading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/Rectangleback"
+        android:layout_width="366dp"
+        android:layout_height="154dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rectangle_contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/facebookicon"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/facebookcon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/phoneicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/phone_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/pfacebooktext"
+        android:layout_width="267dp"
+        android:layout_height="43dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/facetext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/numbertext"
+        android:layout_width="159dp"
+        android:layout_height="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/office_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/pravtext"
+        android:layout_width="200dp"
+        android:layout_height="29dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/prav_num"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/getinText"
+        android:layout_width="207dp"
+        android:layout_height="87dp"
+        android:src="@drawable/getintouch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482"
+        app:layout_constraintWidth_default="wrap" />
+
+    <EditText
+        android:id="@+id/contact_name"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:background="@drawable/really_rounded_text"
+        android:ems="10"
+        android:hint="    Name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#999999"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <EditText
+        android:id="@+id/contact_surname"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:background="@drawable/really_rounded_text"
+        android:ems="10"
+        android:hint="    Surame"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#999999"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <EditText
+        android:id="@+id/contact_email"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:background="@drawable/really_rounded_text"
+        android:ems="10"
+        android:hint="    Email"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#999999"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <EditText
+        android:id="@+id/contact_phone"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:background="@drawable/really_rounded_text"
+        android:ems="10"
+        android:hint="    Phone"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#999999"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
+
+    <EditText
+        android:id="@+id/contact_message"
+        android:layout_width="300dp"
+        android:layout_height="73dp"
+        android:background="@drawable/really_rounded_text"
+        android:ems="10"
+        android:hint="    Message"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#999999"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+</androidx.constraintlayout.widget.ConstraintLayout>

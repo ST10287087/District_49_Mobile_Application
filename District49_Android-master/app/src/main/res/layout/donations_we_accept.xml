@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imgContactUsBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/contact_us_background"
+        android:background="#E8E8E8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Gradient Backgrounds -->
+    <ImageView
+        android:id="@+id/imsgDonationsGradient"
+        android:layout_width="864dp"
+        android:layout_height="681dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/donations_we_accept_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <ImageView
+        android:id="@+id/imssgDonationsGradient"
+        android:layout_width="864dp"
+        android:layout_height="681dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/donations_we_accept_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- Logo -->
+
+    <!-- DONATIONS Text with Border -->
+    <ImageView
+        android:id="@+id/osLogo"
+        android:layout_width="126dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/final_logo"
+        android:translationY="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/donationsTextContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/osLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Border (Yellow-Orange Stroke Effect) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONATIONS"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#FFA500"
+            android:shadowColor="#FFA500"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="8"
+            android:fontFamily="sans-serif-black" />
+
+        <!-- White Fill -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="DONATIONS"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- Info Text Section -->
+
+    <!-- WE ACCEPT Text with Border -->
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_mono"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="
+We gratefully accept:\n
+• Food items (including non-perishables and fresh produce)\n
+• Clothing for children and teens\n
+• Footwear in good condition\n\n
+Please note:\n
+• We do not accept any dangerous weapons, imitation weapons, or toys that resemble weapons of any kind.\n
+• We do not encourage cash donations. If you would like to support us financially, we kindly request that donations be made via EFT (Electronic Funds Transfer) for security and transparency purposes."
+        android:textColor="#FA6F12"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/donationsTextContainer" />
+
+    <FrameLayout
+        android:id="@+id/weAcceptTextContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Border (Yellow-Orange Stroke Effect) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WE ACCEPT"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#FFA500"
+            android:shadowColor="#FFA500"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:fontFamily="sans-serif-black" />
+
+        <!-- White Fill -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WE ACCEPT"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-black" />
+    </FrameLayout>
+
+    <!-- Menu Button -->
+
+
+    <!-- Profile Button -->
+
+    <!-- Search Button -->
+
+    <!-- Bottom Navbar - PINNED AT BOTTOM -->
+
+    <ImageView
+        android:id="@+id/oswhoweare"
+        android:layout_width="383dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/dwa_scribble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weAcceptTextContainer" />
+
+    <include
+        android:id="@+id/include_bottom_nav"
+        layout="@layout/navbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityStory">
+
+    <!-- ===== BACKGROUND ===== -->
+    <ImageView
+        android:id="@+id/osBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/os_background"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- Optional soft gradient overlay -->
+    <ImageView
+        android:id="@+id/osGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pink_gradient"
+        android:scaleType="centerCrop"
+        android:alpha="0.35"
+        android:contentDescription="@null" />
+
+    <!-- ===== SCROLLABLE CONTENT ===== -->
+    <ScrollView
+        android:id="@+id/osScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="96dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Menu button -->
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/osLogo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/final_logo"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null" />
+
+            <!-- Title -->
+            <ImageView
+                android:id="@+id/osOurStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/os_our_story"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null" />
+
+            <!-- Decorative banner -->
+            <ImageView
+                android:id="@+id/osWhoWeAre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/os_whoarewe"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null" />
+
+            <!-- ===== DARKENED GLASS TEXT AREA ===== -->
+            <FrameLayout
+                android:id="@+id/glassContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_marginTop="8dp">
+
+                <!-- Semi-transparent dark overlay for contrast -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#B3000000" />
+
+                <!-- Optional frosted glass image -->
+                <ImageView
+                    android:id="@+id/glassOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/glassbox_overlay"
+                    android:scaleType="fitXY"
+                    android:alpha="0.75"
+                    android:contentDescription="@null" />
+
+                <!-- Text content -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:id="@+id/osStoryText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The District 49 Child and Youth Care Centre was originally established in July 1997 as a place of safety for abused and abandoned children. Over the years, it has evolved into a permanent home that provides holistic care, education, and emotional support for vulnerable children in the Umkomaas region and surrounding areas. The Home strives to create a nurturing environment where each child feels loved, valued, and empowered to build a better future."
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:lineSpacingMultiplier="1.25"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/osStoryText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Home is situated in Umkomaas and currently houses approximately 26–30 children between the ages of 2 and 18. Each child is placed under the care of professional child and youth care workers who ensure that their emotional, educational, and developmental needs are met. The organisation also partners with local schools, clinics, and community members to provide comprehensive care and support services."
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:lineSpacingMultiplier="1.25"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/osStoryText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upon admission, each child is received in a warm and caring manner and made to feel welcome. Individual care plans are developed based on each child’s needs, taking into account their background, trauma, and personal goals. The District 49 team works closely with social workers and psychologists to ensure that the children’s mental health and emotional well-being are prioritised."
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:lineSpacingMultiplier="1.25"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/osStoryText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Daily Life Space interventions teach children healthy living habits, social responsibility, and self-discipline. Educational and recreational activities are an integral part of daily life, designed to develop both academic and life skills. Children are encouraged to participate in gardening, arts, sports, and vocational training, equipping them with confidence and independence as they prepare for adulthood."
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:lineSpacingMultiplier="1.25"
+                        android:paddingBottom="12dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/osStoryText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Our vision is to empower every child who comes through our doors to lead a fulfilling and independent life. We believe that with compassion, education, and community support, we can break the cycle of abuse and poverty—one child at a time."
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:lineSpacingMultiplier="1.25"
+                        android:paddingBottom="0dp"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ===== NAVBAR (fixed bottom) ===== -->
+    <include
+        android:id="@+id/include_bottom_nav"
+        layout="@layout/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>
